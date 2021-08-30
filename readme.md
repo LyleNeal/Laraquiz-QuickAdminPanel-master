@@ -38,7 +38,7 @@ __Notice__: originally created with Laravel 5.3, it was upgraded to Laravel 5.6 
 
 ## License
 
-Basically, feel free to use and re-use any way you want.
+Basically, feel free to use and re-use any way you want..
 
 ---
 
