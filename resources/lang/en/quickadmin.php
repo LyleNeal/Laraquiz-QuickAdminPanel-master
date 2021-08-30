@@ -2,7 +2,7 @@
 
 return [
 	'create' => 'Create',
-	'save' => 'Save',
+	'save' => 'Simpan',
 	'edit' => 'Edit',
 	'view' => 'View',
 	'update' => 'Update',
@@ -10,11 +10,11 @@ return [
 	'no_entries_in_table' => 'No entries in table',
 	'custom_controller_index' => 'Custom controller index.',
 	'logout' => 'Logout',
-	'add_new' => 'Add new',
+	'add_new' => 'Tambah Baru',
 	'are_you_sure' => 'Are you sure?',
 	'back_to_list' => 'Back to list',
 	'dashboard' => 'Dashboard',
-	'delete' => 'Delete',
+	'delete' => 'Hapus',
 	'quickadmin_title' => 'Kuis Sambung Ayat',
 
 	'user-management' => [
@@ -24,7 +24,7 @@ return [
 	],
 
     'test' => [
-        'new' => 'New Quiz',
+        'new' => 'Kuis Baru',
     ],
 
 	'roles' => [
@@ -83,7 +83,7 @@ return [
 	],
 
 	'results' => [
-		'title' => 'My Results',
+		'title' => 'Hasil Kuis',
 		'fields' => [
 			'user' => 'User',
 			'question' => 'Question',

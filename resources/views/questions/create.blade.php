@@ -106,7 +106,7 @@
                     @endif
                 </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-xs-12 form-group">
                     {!! Form::label('code_snippet', 'Code snippet', ['class' => 'control-label']) !!}
                     {!! Form::textarea('code_snippet', old('code_snippet'), ['class' => 'form-control ', 'placeholder' => '']) !!}
@@ -117,7 +117,7 @@
                         </p>
                     @endif
                 </div>
-            </div>
+            </div> -->
             <div class="row">
                 <div class="col-xs-12 form-group">
                     {!! Form::label('answer_explanation', 'Answer explanation*', ['class' => 'control-label']) !!}
@@ -130,7 +130,7 @@
                     @endif
                 </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-xs-12 form-group">
                     {!! Form::label('more_info_link', 'More info link', ['class' => 'control-label']) !!}
                     {!! Form::text('more_info_link', old('more_info_link'), ['class' => 'form-control', 'placeholder' => '']) !!}
@@ -141,7 +141,7 @@
                         </p>
                     @endif
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </div>

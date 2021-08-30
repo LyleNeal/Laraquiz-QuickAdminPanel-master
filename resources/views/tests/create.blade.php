@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h3 class="page-title">@lang('quickadmin.laravel-quiz')</h3>
+    <!-- <h3 class="page-title">@lang('quickadmin.laravel-quiz')</h3> -->
     {!! Form::open(['method' => 'POST', 'route' => ['tests.store'], 'onsubmit' => "return confirm('Do you really want to submit the form?')"]) !!}
 
     <div class="panel panel-default">
@@ -16,20 +16,22 @@
             <div class="row {{ $i > 1 ? 'hidden' : '' }}" id="question-{{ $i }}">
                 <div class="col-xs-12 form-group">
                     <div class="form-group">
-                        <strong>Question {{ $i }}.<br />{!! nl2br($question->question_text) !!}</strong>
+                        <strong style="font-size:30px">Question {{ $i }}.<br><br>{!! nl2br($question->question_text) !!}</strong>
 
                         @if ($question->code_snippet != '')
                             <div class="code_snippet">{!! $question->code_snippet !!}</div>
                         @endif
 
+                        <br>
                         <input
                             type="hidden"
                             name="questions[{{ $i }}]"
                             value="{{ $question->id }}">
                     @foreach($question->options as $option)
                         <br>
-                        <label class="radio-inline">
+                        <label style="font-size:30px" class="radio-inline">
                             <input
+                                style="font-size:30px"
                                 type="radio"
                                 name="answers[{{ $question->id }}]"
                                 value="{{ $option['id'] }}">

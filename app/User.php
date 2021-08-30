@@ -23,7 +23,7 @@ class User extends Authenticatable
     use SoftDeletes, Notifiable;
 
     protected $fillable = [
-        'name', 'email', 'password', 'role_id', 'google_id'
+        'name', 'email', 'password', 'role_id'
     ];
 
     protected $hidden = [
@@ -59,7 +59,7 @@ class User extends Authenticatable
      */
     public function setRoleIdAttribute($input)
     {
-        $this->attributes['role_id'] = $input ? $input : null;
+        $this->attributes['role_id'] = $input ? $input : 2;
     }
 
     public function role()
